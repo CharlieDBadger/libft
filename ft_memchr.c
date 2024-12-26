@@ -47,13 +47,6 @@ int main(void)
         printf("Found 'o' at position: %ld\n", result - str);
     else
         printf("'o' not found.\n");
-
-    result = ft_memchr(str, 'z', 13);
-    if (result)
-        printf("Found 'z' at position: %ld\n", result - str);
-    else
-        printf("'z' not found.\n");
-
     return 0;
 }
 */
