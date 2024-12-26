@@ -45,3 +45,15 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
             *d++ = *s++;
     return (dest);
 }
+/*
+int main(void)
+{
+    char str[] = "Hello, World!";
+
+    printf("Before ft_memmove: %s\n", str);
+    ft_memmove(str + 7, str, 5); // Move "Hello" to the end
+    printf("After ft_memmove: %s\n", str);
+
+    return 0;
+}
+*/
