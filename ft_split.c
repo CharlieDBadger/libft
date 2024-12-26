@@ -127,20 +127,29 @@ char **ft_split(char const *s, char c)
     return (array);
 }
 
-/**
- * ft_split - Splits a string into an array of strings based on a delimiter.
- * @s: The input string to be split.
- * @c: The delimiter character used to separate the words.
- * 
- * Returns an array of strings (null-terminated) containing each word 
- * from the string `s`, separated by the character `c`. If memory allocation 
- * fails, the function returns NULL.
- * 
- * Notes:
- * - Consecutive delimiter characters are ignored.
- * - If `s` is empty or contains no words, the returned array will contain 
- *   only a NULL pointer.
- *//*
+/*
+int main(void)
+{
+    char **result = ft_split("Hello world, this is a test", ' ');
+
+    // Print the result to check the split
+    for (int i = 0; result[i] != NULL; i++)
+    {
+        printf("result[%d]: %s\n", i, result[i]);
+    }
+
+    // Free the allocated memory
+    for (int i = 0; result[i] != NULL; i++)
+    {
+        free(result[i]);
+    }
+    free(result);
+
+    return 0;
+}
+*/
+
+/*
 char    **ft_split(char const *s, char c)
 {
     int     i;
