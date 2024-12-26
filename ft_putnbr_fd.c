@@ -61,3 +61,20 @@ static int	putnbr_recursive(long n, int fd)
 	write (fd, &c, 1);
 	return (n);
 }
+/*
+#include <fcntl.h>
+int main(void)
+{
+    int fd = open("test.txt", O_WRONLY);
+    if (fd == -1) {
+        return 1;  // Error opening file
+    }
+
+    ft_putnbr_fd(1234, fd);   // Writes positive number
+    ft_putnbr_fd(-5678, fd);  // Writes negative number
+    ft_putnbr_fd(0, fd);      // Writes zero
+
+    close(fd);  // Close the file
+    return 0;
+}
+*/

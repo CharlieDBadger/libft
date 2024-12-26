@@ -32,3 +32,17 @@ void ft_putstr_fd(char *s, int fd)
         i++;
     }
 }
+/*
+int main(void)
+{
+    int fd = open("test.txt", O_WRONLY);
+    if (fd == -1) {
+        return 1;  // Error opening file
+    }
+
+    ft_putstr_fd("Hello, world!", fd);
+
+    close(fd);  // Close the file
+    return 0;
+}
+*/
