@@ -26,16 +26,12 @@ void ft_putchar_fd(char c, int fd)
     write(fd, &c, 1);
 }
 /*
+#include <fcntl.h>
 int main(void)
 {
     char c = 'A';
 
     int fd = open("test.txt", O_WRONLY);
-
-    if (fd == -1) {
-        perror("Error opening file");
-        return 1;
-    }
 
     ft_putchar_fd(c, fd);
 

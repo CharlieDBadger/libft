@@ -27,10 +27,23 @@ void ft_putendl_fd(char *s, int fd)
     int i;
 
     i = 0;
-    while (s[i])  // Iterate through the string until the null-terminator
+    while (s[i])
     {
-        write(fd, s + i, 1);  // Write one character at a time to the file descriptor
+        write(fd, s + i, 1);
         i++;
     }
-    write(fd, "\n", 1);  // Write a newline character after the string
+    write(fd, "\n", 1);
 }
+/*
+#include <fcntl.h>
+
+int main(void)
+{
+    int fd = open("test.txt", O_WRONLY);
+
+    ft_putendl_fd("Hello, World!", fd);
+
+    close(fd);
+    return 0;
+}
+*/
