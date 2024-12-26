@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <stdio.h>
 
 /**
  * ft_isascii - Checks if the given character is an ASCII character.
@@ -28,3 +29,16 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
+/*
+int main(void)
+{
+    char c = 127; // Cambia este valor para probar otros caracteres
+
+    if (ft_isascii(c))
+        printf("'%c' is an ASCII character.\n", c);
+    else
+        printf("'%c' is not an ASCII character.\n", c);
+
+    return (0);
+}
+*/
