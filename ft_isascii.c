@@ -31,7 +31,7 @@ int	ft_isascii(int c)
 /*
 int main(void)
 {
-    char c = 127; // Cambia este valor para probar otros caracteres
+    char c = 127;
 
     if (ft_isascii(c))
         printf("'%c' is an ASCII character.\n", c);

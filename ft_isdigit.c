@@ -31,7 +31,7 @@ int	ft_isdigit(int c)
 /*
 int main(void)
 {
-    char c = '5'; // Cambia este valor para probar otros caracteres
+    char c = '5';
 
     if (ft_isdigit(c))
         printf("'%c' is a digit.\n", c);

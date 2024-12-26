@@ -50,13 +50,12 @@ int     ft_atoi(char *str)
 int main(void)
 {
     // Test cases
-    printf("Input: \"42\" => Output: %d\n", ft_atoi("42"));              // Positive number
-    printf("Input: \"   -42\" => Output: %d\n", ft_atoi("   -42"));      // Negative number with spaces
-    printf("Input: \"+123\" => Output: %d\n", ft_atoi("+123"));          // Positive number with '+'
-    printf("Input: \"  +0\" => Output: %d\n", ft_atoi("  +0"));          // Zero
-    printf("Input: \"abc\" => Output: %d\n", ft_atoi("abc"));            // Invalid input
-    printf("Input: \"123abc\" => Output: %d\n", ft_atoi("123abc"));      // Numbers followed by letters
-
+    printf("Input: \"42\" => Output: %d\n", ft_atoi("42"));
+    printf("Input: \"   -42\" => Output: %d\n", ft_atoi("   -42"));
+    printf("Input: \"+123\" => Output: %d\n", ft_atoi("+123"));
+    printf("Input: \"  +0\" => Output: %d\n", ft_atoi("  +0"));
+    printf("Input: \"abc\" => Output: %d\n", ft_atoi("abc"));
+    printf("Input: \"123abc\" => Output: %d\n", ft_atoi("123abc"));
     return 0;
 }
 */
