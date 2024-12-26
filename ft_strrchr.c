@@ -1,0 +1,41 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/01/04 16:11:39 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/05 16:12:10 by cbolanos         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+#include "libft.h"
+
+/**
+ * strrchr - Finds the last occurrence of a character in a string.
+ * @str: The string to search in.
+ * @c: The character to search for (passed as an integer, typically a `char` value).
+ * 
+ * return: A pointer to the last occurrence of character `c` in the string `str`.
+ *         If the character is not found, returns NULL.
+ *         If `c` is the null character (`\0`), 
+ *         returns a pointer to the end of the string.
+ */
+char    *ft_strrchr(const char *str, int c)
+{
+    int     i;
+
+    i = 0;
+    while (str[i] != '\0')
+        i++;
+    while (i >= 0)
+    {
+        if (str[i] == (char)c)
+            return ((char *)&str[i]);
+        i--;
+        if (i < 0)
+            break;
+    }    
+    return (NULL);
+}
+
