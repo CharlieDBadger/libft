@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
+#include <stdio.h>
 /**
  * ft_atoi - Converts a string to an integer.
  * @str: The input string to be converted.

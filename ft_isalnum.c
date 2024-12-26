@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <stdio.h>
 
 /**
  * ft_isalnum - Checks if the given character is alphanumeric.
@@ -28,3 +29,16 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+/*
+int main(void)
+{
+    char c = 'A';
+
+    if (ft_isalnum(c))
+        printf("'%c' is alphanumeric.\n", c);
+    else
+        printf("'%c' is not alphanumeric.\n", c);
+
+    return (0);
+}
+*/
