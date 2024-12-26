@@ -10,6 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+#include <stdio.h>
 
 /**
  * ft_isalpha - Checks if the given character is an alphabetic letter.
@@ -28,3 +29,16 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
+/*
+int main(void)
+{
+    char c = 'B';
+
+    if (ft_isalpha(c))
+        printf("'%c' is an alphabetic character.\n", c);
+    else
+        printf("'%c' is not an alphabetic character.\n", c);
+
+    return (0);
+}
+*/
