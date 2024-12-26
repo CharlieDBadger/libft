@@ -28,7 +28,7 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-/*
+
 int main(void)
 {
     char c = '5';
@@ -40,4 +40,3 @@ int main(void)
 
     return (0);
 }
-*/
