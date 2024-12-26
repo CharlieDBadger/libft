@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
+#include <stdio.h>
 /**
  * ft_calloc - Allocates memory for an array of elements and initializes it to zero.
  * @num: The number of elements to allocate.
@@ -45,3 +45,24 @@ void    *ft_calloc(size_t num, size_t size)
     }
     return ptr;
 }
+/*
+int main(void)
+{
+    size_t count = 5;
+    size_t size = sizeof(int);
+    int *arr = (int *)ft_calloc(count, size);
+    if (!arr)
+    {
+        printf("Memory allocation failed.\n");
+        return (1);
+    }
+    size_t i = 0;
+    while (i < count)
+    {
+        printf("arr[%zu] = %d\n", i, arr[i]);
+        i++;
+    }
+    free(arr);
+    return (0);
+}
+*/
