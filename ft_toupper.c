@@ -33,3 +33,21 @@ char    *ft_toupper(char *str)
     }
     return (str);
 }
+
+/*
+int main(void)
+{
+    char str[] = "hello, world!";
+
+    int i = 0;
+    while (str[i])
+    {
+        str[i] = ft_toupper(str[i]);
+        i++;
+    }
+
+    printf("Uppercase string: '%s'\n", str);
+
+    return 0;
+}
+*/

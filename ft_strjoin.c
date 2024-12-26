@@ -50,3 +50,21 @@ char    *ft_strjoin(char const *s1, char const *s2)
     s3[j] = '\0';
     return (s3rtn);
 }
+/*
+int main(void)
+{
+    char *str1 = "Hello ";
+    char *str2 = "world!";
+
+    // Join the two strings
+    char *result = ft_strjoin(str1, str2);
+
+    // Print the result
+    printf("Joined string: %s\n", result);
+
+    // Free the memory allocated by ft_strjoin
+    free(result);
+
+    return 0;
+}
+*/

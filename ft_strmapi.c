@@ -43,3 +43,16 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     result[i] = '\0';
     return (result);
 }
+
+/*
+int main(void)
+{
+    char str[] = "Hello, world!";
+
+    size_t len = ft_strlen(str);
+
+    printf("Length of the string: %zu\n", len);
+
+    return 0;
+}
+*/

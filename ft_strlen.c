@@ -27,3 +27,16 @@ int     ft_strlen(const char *str)
     }
     return (count);
 }
+
+/*
+int main(void)
+{
+    char str[] = "Hello, world!";
+
+    size_t len = ft_strlen(str);
+
+    printf("Length of the string: %zu\n", len);
+
+    return 0;
+}
+*/

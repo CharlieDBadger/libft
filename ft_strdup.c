@@ -43,3 +43,25 @@ char	*ft_strdup(const char *src)
 	strdup[i] = '\0';
 	return (strdup);
 }
+/*
+int main(void)
+{
+    char *str = "This is a test string.";
+
+    char *duplicated_str = ft_strdup(str);
+
+    if (duplicated_str)
+    {
+        printf("Original string: %s\n", str);
+        printf("Duplicated string: %s\n", duplicated_str);
+
+        free(duplicated_str);
+    }
+    else
+    {
+        printf("Memory allocation failed for the duplicated string.\n");
+    }
+
+    return 0;
+}
+*/

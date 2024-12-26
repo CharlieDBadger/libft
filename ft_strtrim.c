@@ -57,3 +57,19 @@ char *ft_strtrim(char const *s1, char const *set)
     ft_strlcpy(trimmed, s1 + start, len + 1); // Copia la subcadena desde `start` hasta `end`
     return (trimmed);
 }
+
+/*
+int main(void)
+{
+    char str[] = "   Hello, world!   ";
+    char set[] = " ";  // We want to trim spaces
+
+    char *result = ft_strtrim(str, set);
+
+    printf("Trimmed string: '%s'\n", result);
+
+    free(result);
+
+    return 0;
+}
+*/
