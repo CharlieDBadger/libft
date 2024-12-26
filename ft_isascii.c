@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
 
 /**
  * ft_isascii - Checks if the given character is an ASCII character.

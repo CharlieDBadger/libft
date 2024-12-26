@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
 
 /**
  * ft_isalnum - Checks if the given character is alphanumeric.

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdio.h>
+
 /**
  * ft_calloc - Allocates memory for an array of elements and initializes it to zero.
  * @num: The number of elements to allocate.
