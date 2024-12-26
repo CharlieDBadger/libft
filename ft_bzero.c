@@ -29,16 +29,23 @@ void    ft_bzero(void *s, size_t len)
         ptr++;
     }
 }
-
+/*
 int main(void)
 {
-    // Test cases
-    printf("Input: \"42\" => Output: %d\n", ft_atoi("42"));              // Positive number
-    printf("Input: \"   -42\" => Output: %d\n", ft_atoi("   -42"));      // Negative number with spaces
-    printf("Input: \"+123\" => Output: %d\n", ft_atoi("+123"));          // Positive number with '+'
-    printf("Input: \"  +0\" => Output: %d\n", ft_atoi("  +0"));          // Zero
-    printf("Input: \"abc\" => Output: %d\n", ft_atoi("abc"));            // Invalid input
-    printf("Input: \"123abc\" => Output: %d\n", ft_atoi("123abc"));      // Numbers followed by letters
-
+    char buffer[10] = "TestData";
+    int i = 0;
+    printf("Before ft_bzero: %s\n", buffer);
+    ft_bzero(buffer, 5);
+    printf("After ft_bzero: ");
+    while (i < 9)
+    {
+        if (buffer[i] == '\0')
+            printf("\\0");
+        else
+            printf("%c", buffer[i]);
+        i++;
+    }
+    printf("\n");
     return 0;
 }
+*/
