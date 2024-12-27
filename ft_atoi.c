@@ -22,10 +22,10 @@
  * Return: The integer representation of the string. If no valid conversion 
  *         is performed, returns 0.
  */
-int     ft_atoi(char *str)
+int    ft_atoi(char *str)
 {
-    int i;
-    int n;
+    int    i;
+    int    n;
     int result;
 
     i = 0;
