@@ -16,8 +16,9 @@
  * 
  * @n: The integer whose length is to be calculated.
  * 
- * This function calculates how many characters are needed to represent the integer 'n' 
- * as a string. It accounts for the sign of negative numbers and includes a check 
+ * This function calculates how many characters are needed to 
+ * represent the integer 'n' as a string. It accounts for 
+ * the sign of negative numbers and includes a check 
  * for zero (which has a length of 1).
  * 
  * Example:
@@ -26,21 +27,21 @@
  * Return:
  * - The length of the integer when represented as a string.
  */
-static int     num_str_len(int n)
+static int	num_str_len(int n)
 {
-    int len;
-    
-    len = 0;
-    if (n == 0)
-        return (1);
-    if (n < 0)
-        len++;
-    while (n != 0)
-    {
-        n = n / 10;
-        len++;
-    }
-    return (len);
+	int	len;
+
+	len = 0;
+	if (n == 0)
+		return (1);
+	if (n < 0)
+		len++;
+	while (n != 0)
+	{
+		n = n / 10;
+		len++;
+	}
+	return (len);
 }
 
 /**
@@ -57,11 +58,11 @@ static int     num_str_len(int n)
  * Return:
  * - The absolute value of the integer 'n' as a long.
  */
-static long itol_abs(int n)
+static long	itol_abs(int n)
 {
-    if (n < 0)
-        return ((long)n * -1);
-    return ((long)n);
+	if (n < 0)
+		return ((long)n * -1);
+	return ((long)n);
 }
 
 /**
@@ -78,35 +79,36 @@ static long itol_abs(int n)
  * ft_itoa(-123) returns "-123".
  * 
  * Return:
- * - A newly allocated string representing the integer, or NULL if memory allocation fails.
+ * - A newly allocated string representing the integer, 
+ * or NULL if memory allocation fails.
  */
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-    int num_len;
-    long n_long;
-    char *n_str;
-    
-    num_len = num_str_len(n);
-    n_str = (char *)malloc((num_len + 1) * sizeof(char));
-    if (!n_str)
-        return (NULL);
-    n_long = itol_abs(n);
-    if (n == 0)  // Caso especial cuando el número es 0
-    {
-        n_str[0] = '0';
-        n_str[1] = '\0';
-        return (n_str);
-    }
-    if (n < 0)
-        n_str[0] = '-';
-    n_str[num_len] = '\0';
-    while (n_long > 0)
-    {
-        n_str[num_len - 1] = (n_long % 10) + '0';
-        n_long = n_long / 10;
-        num_len--;
-    }
-    return (n_str);
+	int		num_len;
+	long	n_long;
+	char	*n_str;
+
+	num_len = num_str_len(n);
+	n_str = (char *)malloc((num_len + 1) * sizeof(char));
+	if (!n_str)
+		return (NULL);
+	n_long = itol_abs(n);
+	if (n == 0)
+	{
+		n_str[0] = '0';
+		n_str[1] = '\0';
+		return (n_str);
+	}
+	if (n < 0)
+		n_str[0] = '-';
+	n_str[num_len] = '\0';
+	while (n_long > 0)
+	{
+		n_str[num_len - 1] = (n_long % 10) + '0';
+		n_long = n_long / 10;
+		num_len--;
+	}
+	return (n_str);
 }
 /*
 int main(void)

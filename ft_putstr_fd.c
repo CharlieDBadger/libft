@@ -12,25 +12,27 @@
 #include "libft.h"
 
 /**
- * ft_putstr_fd - Writes a string to a given file descriptor, one character at a time.
+ * ft_putstr_fd - Writes a string to a given file descriptor, 
+ *                one character at a time.
  * 
  * @s: The string to write.
  * @fd: The file descriptor to write to.
  * 
- * This function iterates through the string 's' and writes each character 
+ * This function iterates through the string 's' and writes 
+ * each character 
  * to the specified file descriptor using the system call 'write'.
  * It ensures each character is written individually.
  */
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s[i])
-    {
-        write(fd, s + i, 1);
-        i++;
-    }
+	i = 0;
+	while (s[i])
+	{
+		write(fd, s + i, 1);
+		i++;
+	}
 }
 /*
 int main(void)

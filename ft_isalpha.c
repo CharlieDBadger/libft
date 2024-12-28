@@ -16,7 +16,8 @@
  * 
  * @c: The character to check.
  * 
- * This function returns 1 if the character 'c' is an alphabetic letter (A-Z or a-z),
+ * This function returns 1 if the character 'c' is an alphabetic letter 
+ * (A-Z or a-z),
  * and 0 otherwise.
  * 
  * Return: 1 if 'c' is a letter, 0 otherwise.

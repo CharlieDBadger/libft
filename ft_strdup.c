@@ -17,7 +17,8 @@
  *
  * This function creates a new string by allocating memory dynamically,
  * copying the content of the given string (including the null terminator).
- * It is the caller's responsibility to free the memory allocated by this function.
+ * It is the caller's responsibility to free the memory allocated by this 
+ * function.
  *
  * Return:
  * - A pointer to the newly allocated string if successful.

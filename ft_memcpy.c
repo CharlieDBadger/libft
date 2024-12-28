@@ -23,21 +23,21 @@
 * to the memory area pointed to by `dest`. The memory areas must not 
 * overlap. If the memory areas do overlap, the behavior is undefined.
 */
-void    *ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-    unsigned char    *d;
-    unsigned char   *s;
-    size_t     i;
+	unsigned char	*d;
+	unsigned char	*s;
+	size_t			i;
 
-    d = dest;
-    s = (unsigned char *)src;
-    i = 0;
-    while (i < n)
-    {
-        d[i] = s[i];
-        i++;
-    }
-    return (dest);
+	d = dest;
+	s = (unsigned char *)src;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
+	return (dest);
 }
 /*
 int main(void)

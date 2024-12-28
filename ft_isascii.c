@@ -16,7 +16,8 @@
  * 
  * @c: The character to check.
  * 
- * This function returns 1 if the character 'c' is a valid ASCII character 
+ * This function returns 1 if the character 'c' is a 
+ * valid ASCII character 
  * (i.e., its value is between 0 and 127 inclusive), and 0 otherwise.
  * 
  * Return: 1 if 'c' is an ASCII character, 0 otherwise.

@@ -22,16 +22,16 @@
  * to each character. The index and a pointer to each character are passed 
  * to the function 'f', allowing modification of the original string.
  */
-void ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-    unsigned int i;
+	unsigned int	i;
 
-    i = 0;
-    while (s[i])  // Iterate through the string until the null-terminator
-    {
-        f(i, s + i);  // Pass the index and the pointer to the current character
-        i++;
-    }
+	i = 0;
+	while (s[i])
+	{
+		f(i, s + i);
+		i++;
+	}
 }
 
 /*

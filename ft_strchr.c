@@ -21,20 +21,20 @@
  *   or NULL if the character is not found.
  * - If @c is '\0', returns a pointer to the null terminator of the string.
  */
-char    *ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *str, int c)
 {
-    int     i;
+	int	i;
 
-    i = 0;
-    while (str[i] != '\0')
-    {
-        if (str[i] == (char)c)
-            return ((char *)&str[i]);
-        i++;
-    }
-    if(c == '\0')
-        return ((char *)&str[i]);
-    return (NULL);
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] == (char)c)
+			return ((char *)&str[i]);
+		i++;
+	}
+	if (c == '\0')
+		return ((char *)&str[i]);
+	return (NULL);
 }
 
 /*

@@ -21,20 +21,20 @@
  * Return: Returns a pointer to the first occurrence of value in the memory
  *         block, or NULL if the value is not found within the first n bytes.
  */
-void    *ft_memchr(const void *ptr, int value, size_t num)
+void	*ft_memchr(const void *ptr, int value, size_t num)
 {
-    size_t     i;
-    unsigned char   *s;
+	size_t			i;
+	unsigned char	*s;
 
-    s = (unsigned char *)ptr;
-    i = 0;
-    while (i < num)
-    {
-        if (s[i] == (unsigned char)value)
-            return (&s[i]);
-        i++;
-    }
-    return (NULL);
+	s = (unsigned char *)ptr;
+	i = 0;
+	while (i < num)
+	{
+		if (s[i] == (unsigned char)value)
+			return (&s[i]);
+		i++;
+	}
+	return (NULL);
 }
 /*
 int main(void)

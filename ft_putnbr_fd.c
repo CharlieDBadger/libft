@@ -39,7 +39,8 @@ void	ft_putnbr_fd(int n, int fd)
 }
 
 /*
- * putnbr_recursive - Recursively writes the digits of a number to the given file descriptor.
+ * putnbr_recursive - Recursively writes the digits of a number to the 
+ *                    given file descriptor.
  * @n: The number to be written.
  * @fd: The file descriptor to which the digits will be written.
  * 

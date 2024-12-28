@@ -12,7 +12,8 @@
 #include "libft.h"
 
 /**
- * ft_putendl_fd - Writes a string followed by a newline to a given file descriptor.
+ * ft_putendl_fd - Writes a string followed by a newline to a 
+ * given file descriptor.
  * 
  * @s: The string to write.
  * @fd: The file descriptor to write to.
@@ -22,17 +23,17 @@
  * It ensures the string is followed by a newline, useful for printing lines 
  * of text with proper line breaks.
  */
-void ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s[i])
-    {
-        write(fd, s + i, 1);
-        i++;
-    }
-    write(fd, "\n", 1);
+	i = 0;
+	while (s[i])
+	{
+		write(fd, s + i, 1);
+		i++;
+	}
+	write(fd, "\n", 1);
 }
 /*
 #include <fcntl.h>

@@ -12,20 +12,21 @@
 #include "libft.h"
 
 /**
-* ft_strlen - Calculates the length of the string pointed to by 'str', excluding the null terminator.
+* ft_strlen - Calculates the length of the string pointed to by 'str', 
+*             excluding the null terminator.
 * @str: The string whose length is to be calculated.
 * return: The length of the string.
 */
-int     ft_strlen(const char *str)
+int	ft_strlen(const char *str)
 {
-    int     count;
+	int	count;
 
-    count = 0;
-    while (str[count] != '\0')
-    {
-        count++;
-    }
-    return (count);
+	count = 0;
+	while (str[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
 }
 
 /*

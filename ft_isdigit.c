@@ -16,7 +16,8 @@
  * 
  * @c: The character to check.
  * 
- * This function returns 1 if the character 'c' is a digit (i.e., between '0' and '9'),
+ * This function returns 1 if the character 'c' is a digit 
+ * (i.e., between '0' and '9'),
  * and 0 otherwise.
  * 
  * Return: 1 if 'c' is a digit, 0 otherwise.

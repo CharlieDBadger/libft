@@ -26,29 +26,29 @@
  * the length of the original string, it returns an empty string. If the 
  * substring length is shorter than `len`, it copies the maximum possible length.
  */
-char    *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    size_t      i;
-    char    *subs;
-    char    *subsrtn;
+	size_t	i;
+	char	*subs;
+	char	*subsrtn;
 
-    if (!s)
-        return (NULL);
-    if (start >= ft_strlen(s))
-        return (NULL);
-    i = start;
-    subs = (char *)malloc((len + 1) * sizeof(char));
-    if (!subs)
-        return (NULL);
-    subsrtn = subs;
-    while (s[i] != '\0' && i < start + len)
-    {
-        *subs = s[i];
-        subs++;
-        i++;
-    }
-    *subs = '\0';
-    return (subsrtn);
+	if (!s)
+		return (NULL);
+	if (start >= ft_strlen(s))
+		return (NULL);
+	i = start;
+	subs = (char *)malloc((len + 1) * sizeof(char));
+	if (!subs)
+		return (NULL);
+	subsrtn = subs;
+	while (s[i] != '\0' && i < start + len)
+	{
+		*subs = s[i];
+		subs++;
+		i++;
+	}
+	*subs = '\0';
+	return (subsrtn);
 }
 
 /*

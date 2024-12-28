@@ -28,25 +28,26 @@
  *   for `needle` is found.
  * - The function ensures that no out-of-bounds memory is accessed.
  */
-char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-    size_t i;
-    size_t j;
+	size_t	i;
+	size_t	j;
 
-    if (*needle == '\0')
-        return ((char *)haystack);
-    i = 0;
-    while (i < len && haystack[i] != '\0') {
-        j = 0;
-        while (i + j < len && haystack[i + j] == needle[j]) {
-            // Si se alcanza el final de needle, hay coincidencia
-            if (needle[j + 1] == '\0')
-                return ((char *)&haystack[i]);
-            j++;
-        }
-        i++;
-    }
-    return (NULL);
+	if (*needle == '\0')
+		return ((char *)haystack);
+	i = 0;
+	while (i < len && haystack[i] != '\0')
+	{
+		j = 0;
+		while (i + j < len && haystack[i + j] == needle[j])
+		{
+			if (needle[j + 1] == '\0')
+				return ((char *)&haystack[i]);
+			j++;
+		}
+		i++;
+	}
+	return (NULL);
 }
 
 /*

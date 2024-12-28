@@ -12,7 +12,8 @@
 #include "libft.h"
 
 /**
- * ft_calloc - Allocates memory for an array of elements and initializes it to zero.
+ * ft_calloc - Allocates memory for an array of elements and 
+ * initializes it to zero.
  * @num: The number of elements to allocate.
  * @size: The size in bytes of each element.
  *
@@ -22,28 +23,29 @@
  * is explicitly set to 0, fulfilling the requirement for zero initialization.
  * If the allocation fails, it returns NULL.
  *
- * Return: A pointer to the allocated and initialized memory, or NULL if the allocation fails.
+ * Return: A pointer to the allocated and initialized memory, 
+ * or NULL if the allocation fails.
  */
-void    *ft_calloc(size_t num, size_t size)
+void	*ft_calloc(size_t num, size_t size)
 {
-    void *ptr;
-    size_t i;
+	void	*ptr;
+	size_t	i;
 
-    if (num == 0 || size == 0)
+	if (num == 0 || size == 0)
 	{
 		num = 1;
 		size = 1;
 	}
-    ptr = malloc(num * size);
-    if (ptr == NULL)
-        return NULL;
-    i = 0;
-    while (i < num * size)
-    {
-        ((unsigned char *)ptr)[i] = 0;
-        i++;
-    }
-    return ptr;
+	ptr = malloc(num * size);
+	if (ptr == NULL)
+		return (NULL);
+	i = 0;
+	while (i < num * size)
+	{
+		((unsigned char *)ptr)[i] = 0;
+		i++;
+	}
+	return (ptr);
 }
 /*
 int main(void)

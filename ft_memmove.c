@@ -24,26 +24,26 @@
  * 
  * Return: A pointer to the destination memory area (`dest`).
  */
-void    *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-    unsigned char *d;
-    unsigned char *s;
+	unsigned char	*d;
+	unsigned char	*s;
 
-    d = dest;
-    s = (unsigned char *) src;
-    if (d == NULL && s == NULL)
-        return (NULL);
-    if (s < d && (s + n) > d)  // Si las áreas de memoria se solapan, copiamos de atrás hacia adelante
-    {
-        d += n;
-        s += n;
-        while (n-- > 0)
-            *(--d) = *(--s);
-    }
-    else  // Si no se solapan o no hay riesgo de solapamiento, copiamos de adelante hacia atrás
-        while (n-- > 0)
-            *d++ = *s++;
-    return (dest);
+	d = dest;
+	s = (unsigned char *) src;
+	if (d == NULL && s == NULL)
+		return (NULL);
+	if (s < d && (s + n) > d)
+	{
+		d += n;
+		s += n;
+		while (n-- > 0)
+			*(--d) = *(--s);
+	}
+	else
+		while (n-- > 0)
+			*d++ = *s++;
+	return (dest);
 }
 /*
 int main(void)
