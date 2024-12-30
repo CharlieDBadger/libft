@@ -55,12 +55,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 int	main(void)
 {
-	char	str[];
-	char	set[];
+	char	str[] = "   Hello, world!   ";
+	char	set[] = " ";
 	char	*result;
 
-	str[] = "   Hello, world!   ";
-	set[] = " ";
 	result = ft_strtrim(str, set);
 	printf("Trimmed string: '%s'\n", result);
 	free(result);
