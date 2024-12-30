@@ -50,19 +50,20 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(trimmed, s1 + start, len + 1);
 	return (trimmed);
 }
-
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char str[] = "   Hello, world!   ";
-    char set[] = " ";  // We want to trim spaces
+	char	str[];
+	char	set[];
+	char	*result;
 
-    char *result = ft_strtrim(str, set);
-
-    printf("Trimmed string: '%s'\n", result);
-
-    free(result);
-
-    return 0;
+	str[] = "   Hello, world!   ";
+	set[] = " ";
+	result = ft_strtrim(str, set);
+	printf("Trimmed string: '%s'\n", result);
+	free(result);
+	return (0);
 }
 */

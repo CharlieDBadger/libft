@@ -27,16 +27,16 @@ void	ft_putchar_fd(char c, int fd)
 }
 /*
 #include <fcntl.h>
-int main(void)
+
+int	main(void)
 {
-    char c = 'A';
+	char	c;
+	int		fd;
 
-    int fd = open("test.txt", O_WRONLY);
-
-    ft_putchar_fd(c, fd);
-
-    close(fd);
-
-    return 0;
+	c = 'A';
+	fd = open("test.txt", O_WRONLY);
+	ft_putchar_fd(c, fd);
+	close(fd);
+	return (0);
 }
 */

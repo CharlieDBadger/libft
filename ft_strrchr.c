@@ -40,20 +40,22 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
-
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    const char *str = "Hello, world!";
-    char c = 'o';
+	const char	*str;
+	char		c;
+	char		*result;
 
-    char *result = ft_strrchr(str, c);
-
-    if (result)
-        printf("Last occurrence of '%c': %s\n", c, result);
-    else
-        printf("Character '%c' not found\n", c);
-
-    return 0;
+	str = "Hello, world!";
+	c = 'o';
+	result = ft_strrchr(str, c);
+	if (result)
+		printf("Last occurrence of '%c': %s\n", c, result);
+	else
+		printf("Character '%c' not found\n", c);
+	return (0);
 }
 */

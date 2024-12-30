@@ -64,18 +64,18 @@ static int	putnbr_recursive(long n, int fd)
 }
 /*
 #include <fcntl.h>
-int main(void)
+
+int	main(void)
 {
-    int fd = open("test.txt", O_WRONLY);
-    if (fd == -1) {
-        return 1;  // Error opening file
-    }
+	int	fd;
 
-    ft_putnbr_fd(1234, fd);   // Writes positive number
-    ft_putnbr_fd(-5678, fd);  // Writes negative number
-    ft_putnbr_fd(0, fd);      // Writes zero
-
-    close(fd);  // Close the file
-    return 0;
+	fd = open("test.txt", O_WRONLY);
+	if (fd == -1)
+		return (1);
+	ft_putnbr_fd(1234, fd);
+	ft_putnbr_fd(-5678, fd);
+	ft_putnbr_fd(0, fd);
+	close(fd);
+	return (0);
 }
 */

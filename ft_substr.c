@@ -50,20 +50,22 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	*subs = '\0';
 	return (subsrtn);
 }
-
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char str[] = "Hello, world!";
-    unsigned int start = 7;
-    size_t len = 5;
+	char			str[];
+	unsigned int	start;
+	size_t			len;
+	char			*result;
 
-    char *result = ft_substr(str, start, len);
-
-    printf("Substring: '%s'\n", result);
-
-    free(result);
-
-    return 0;
+	str[] = "Hello, world!";
+	start = 7;
+	len = 5;
+	result = ft_substr(str, start, len);
+	printf("Substring: '%s'\n", result);
+	free(result);
+	return (0);
 }
 */

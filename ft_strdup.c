@@ -45,24 +45,25 @@ char	*ft_strdup(const char *src)
 	return (strdup);
 }
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char *str = "This is a test string.";
+	char	*str;
+	char	*duplicated_str;
 
-    char *duplicated_str = ft_strdup(str);
-
-    if (duplicated_str)
-    {
-        printf("Original string: %s\n", str);
-        printf("Duplicated string: %s\n", duplicated_str);
-
-        free(duplicated_str);
-    }
-    else
-    {
-        printf("Memory allocation failed for the duplicated string.\n");
-    }
-
-    return 0;
+	str = "This is a test string.";
+	duplicated_str = ft_strdup(str);
+	if (duplicated_str)
+	{
+		printf("Original string: %s\n", str);
+		printf("Duplicated string: %s\n", duplicated_str);
+		free(duplicated_str);
+	}
+	else
+	{
+		printf("Memory allocation failed for the duplicated string.\n");
+	}
+	return (0);
 }
 */

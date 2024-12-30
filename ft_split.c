@@ -133,24 +133,28 @@ char	**ft_split(char const *s, char c)
 }
 
 /*
-int main(void)
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
 {
-    char **result = ft_split("Hello world, this is a test", ' ');
+	char **result = ft_split("Hello world, this is a test", ' ');
+	int i;
 
-    // Print the result to check the split
-    for (int i = 0; result[i] != NULL; i++)
-    {
-        printf("result[%d]: %s\n", i, result[i]);
-    }
-
-    // Free the allocated memory
-    for (int i = 0; result[i] != NULL; i++)
-    {
-        free(result[i]);
-    }
-    free(result);
-
-    return 0;
+	i = 0;
+	while (result[i] != NULL)
+	{
+		printf("result[%d]: %s\n", i, result[i]);
+		i++;
+	}
+	i = 0;
+	while (result[i] != NULL)
+	{
+		free(result[i]);
+		i++;
+	}
+	free(result);
+	return 0;
 }
 */
 

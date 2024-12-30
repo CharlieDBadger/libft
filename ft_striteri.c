@@ -33,16 +33,16 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char str[] = "hello world";
+	char	str[];
 
-    ft_striteri(str, ft_toupper);
-
-    printf("Uppercase string: %s\n", str);
-
-    return 0;
+	str[] = "hello world";
+	ft_striteri(str, ft_toupper);
+	printf("Uppercase string: %s\n", str);
+	return (0);
 }
 */

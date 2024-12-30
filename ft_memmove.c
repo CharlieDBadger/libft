@@ -46,14 +46,16 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	return (dest);
 }
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char str[] = "Hello, World!";
+	char	str[];
 
-    printf("Before ft_memmove: %s\n", str);
-    ft_memmove(str + 7, str, 5); // Move "Hello" to the end
-    printf("After ft_memmove: %s\n", str);
-
-    return 0;
+	str[] = "Hello, World!";
+	printf("Before ft_memmove: %s\n", str);
+	ft_memmove(str + 7, str, 5);
+	printf("After ft_memmove: %s\n", str);
+	return (0);
 }
 */

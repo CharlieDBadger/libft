@@ -37,16 +37,19 @@ void	*ft_memchr(const void *ptr, int value, size_t num)
 	return (NULL);
 }
 /*
-int main(void)
-{
-    char str[] = "Hello, World!";
-    char *result;
+#include <stdio.h>
 
-    result = ft_memchr(str, 'o', 13);
-    if (result)
-        printf("Found 'o' at position: %ld\n", result - str);
-    else
-        printf("'o' not found.\n");
-    return 0;
+int	main(void)
+{
+	char	str[];
+	char	*result;
+
+	str[] = "Hello, World!";
+	result = ft_memchr(str, 'o', 13);
+	if (result)
+		printf("Found 'o' at position: %ld\n", result - str);
+	else
+		printf("'o' not found.\n");
+	return (0);
 }
 */

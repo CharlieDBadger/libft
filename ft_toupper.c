@@ -31,21 +31,22 @@ char	*ft_toupper(char *str)
 	}
 	return (str);
 }
-
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char str[] = "hello, world!";
+	char	str[];
+	int		i;
 
-    int i = 0;
-    while (str[i])
-    {
-        str[i] = ft_toupper(str[i]);
-        i++;
-    }
-
-    printf("Uppercase string: '%s'\n", str);
-
-    return 0;
+	str[] = "hello, world!";
+	i = 0;
+	while (str[i])
+	{
+		str[i] = ft_toupper(str[i]);
+		i++;
+	}
+	printf("Uppercase string: '%s'\n", str);
+	return (0);
 }
 */

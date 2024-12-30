@@ -30,15 +30,17 @@ int	ft_isalpha(int c)
 		return (0);
 }
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char c = 'B';
+	char	c;
 
-    if (ft_isalpha(c))
-        printf("'%c' is an alphabetic character.\n", c);
-    else
-        printf("'%c' is not an alphabetic character.\n", c);
-
-    return (0);
+	c = 'B';
+	if (ft_isalpha(c))
+		printf("'%c' is an alphabetic character.\n", c);
+	else
+		printf("'%c' is not an alphabetic character.\n", c);
+	return (0);
 }
 */

@@ -48,23 +48,30 @@ void	*ft_calloc(size_t num, size_t size)
 	return (ptr);
 }
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    size_t count = 5;
-    size_t size = sizeof(int);
-    int *arr = (int *)ft_calloc(count, size);
-    if (!arr)
-    {
-        printf("Memory allocation failed.\n");
-        return (1);
-    }
-    size_t i = 0;
-    while (i < count)
-    {
-        printf("arr[%zu] = %d\n", i, arr[i]);
-        i++;
-    }
-    free(arr);
-    return (0);
+	size_t	count;
+	size_t	size;
+	int		*arr;
+	size_t	i;
+
+	count = 5;
+	size = sizeof(int);
+	arr = (int *)ft_calloc(count, size);
+	if (!arr)
+	{
+		printf("Memory allocation failed.\n");
+		return (1);
+	}
+	i = 0;
+	while (i < count)
+	{
+		printf("arr[%zu] = %d\n", i, arr[i]);
+		i++;
+	}
+	free(arr);
+	return (0);
 }
 */

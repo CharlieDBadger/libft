@@ -30,15 +30,17 @@ int	ft_isascii(int c)
 		return (0);
 }
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char c = 127;
+	char	c;
 
-    if (ft_isascii(c))
-        printf("'%c' is an ASCII character.\n", c);
-    else
-        printf("'%c' is not an ASCII character.\n", c);
-
-    return (0);
+	c = 127;
+	if (ft_isascii(c))
+		printf("'%c' is an ASCII character.\n", c);
+	else
+		printf("'%c' is not an ASCII character.\n", c);
+	return (0);
 }
 */

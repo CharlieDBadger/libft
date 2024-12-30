@@ -111,21 +111,24 @@ char	*ft_itoa(int n)
 	return (n_str);
 }
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    int n = 12345;
-    char *str = ft_itoa(n);
+	int		n;
+	char	*str;
 
-    if (str)
-    {
-        printf("The integer %d as a string is: %s\n", n, str);
-        free(str);
-    }
-    else
-    {
-        printf("Memory allocation failed.\n");
-    }
-
-    return (0);
+	n = 12345;
+	str = ft_itoa(n);
+	if (str)
+	{
+		printf("The integer %d as a string is: %s\n", n, str);
+		free(str);
+	}
+	else
+	{
+		printf("Memory allocation failed.\n");
+	}
+	return (0);
 }
 */

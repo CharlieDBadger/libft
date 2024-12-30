@@ -35,16 +35,17 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 /*
-int main(void)
+#include <fcntl.h>
+
+int	main(void)
 {
-    int fd = open("test.txt", O_WRONLY);
-    if (fd == -1) {
-        return 1;  // Error opening file
-    }
+	int	fd;
 
-    ft_putstr_fd("Hello, world!", fd);
-
-    close(fd);  // Close the file
-    return 0;
+	fd = open("test.txt", O_WRONLY);
+	if (fd == -1)
+		return (1);
+	ft_putstr_fd("Hello, world!", fd);
+	close(fd);
+	return (0);
 }
 */

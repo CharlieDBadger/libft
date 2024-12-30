@@ -35,14 +35,16 @@ void	*ft_memset(void *ptr, int value, size_t num)
 	return (ptr);
 }
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char str[] = "Hello, World!";
+	char	str[];
 
-    printf("Before ft_memset: %s\n", str);
-    ft_memset(str, 'X', 5); // Set the first 5 characters to 'X'
-    printf("After ft_memset: %s\n", str);
-
-    return 0;
+	str[] = "Hello, World!";
+	printf("Before ft_memset: %s\n", str);
+	ft_memset(str, 'X', 5);
+	printf("After ft_memset: %s\n", str);
+	return (0);
 }
 */

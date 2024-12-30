@@ -29,17 +29,18 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
-
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char c = 'A';
+	char	c;
 
-    if (ft_isprint(c))
-        printf("'%c' is a printable character.\n", c);
-    else
-        printf("'%c' is not a printable character.\n", c);
-
-    return (0);
+	c = 'A';
+	if (ft_isprint(c))
+		printf("'%c' is a printable character.\n", c);
+	else
+		printf("'%c' is not a printable character.\n", c);
+	return (0);
 }
 */

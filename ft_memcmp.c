@@ -41,28 +41,29 @@ int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
 	}
 	return (0);
 }
-
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char str1[] = "Hello";
-    char str2[] = "Hello";
-    char str3[] = "World";
+	char	str1[];
+	char	str2[];
+	char	str3[];
+	int		result;
 
-    int result;
-
-    result = ft_memcmp(str1, str2, 5);
-    if (result == 0)
-        printf("str1 and str2 are identical.\n");
-    else
-        printf("str1 and str2 are different.\n");
-
-    result = ft_memcmp(str1, str3, 5);
-    if (result == 0)
-        printf("str1 and str3 are identical.\n");
-    else
-        printf("str1 and str3 are different.\n");
-
-    return 0;
+	str1[] = "Hello";
+	str2[] = "Hello";
+	str3[] = "World";
+	result = ft_memcmp(str1, str2, 5);
+	if (result == 0)
+		printf("str1 and str2 are identical.\n");
+	else
+		printf("str1 and str2 are different.\n");
+	result = ft_memcmp(str1, str3, 5);
+	if (result == 0)
+		printf("str1 and str3 are identical.\n");
+	else
+		printf("str1 and str3 are different.\n");
+	return (0);
 }
 */

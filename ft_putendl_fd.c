@@ -38,13 +38,13 @@ void	ft_putendl_fd(char *s, int fd)
 /*
 #include <fcntl.h>
 
-int main(void)
+int	main(void)
 {
-    int fd = open("test.txt", O_WRONLY);
+	int	fd;
 
-    ft_putendl_fd("Hello, World!", fd);
-
-    close(fd);
-    return 0;
+	fd = open("test.txt", O_WRONLY);
+	ft_putendl_fd("Hello, World!", fd);
+	close(fd);
+	return (0);
 }
 */

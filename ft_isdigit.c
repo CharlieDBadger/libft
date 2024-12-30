@@ -30,15 +30,17 @@ int	ft_isdigit(int c)
 		return (0);
 }
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char c = '5';
+	char	c;
 
-    if (ft_isdigit(c))
-        printf("'%c' is a digit.\n", c);
-    else
-        printf("'%c' is not a digit.\n", c);
-
-    return (0);
+	c = '5';
+	if (ft_isdigit(c))
+		printf("'%c' is a digit.\n", c);
+	else
+		printf("'%c' is not a digit.\n", c);
+	return (0);
 }
 */

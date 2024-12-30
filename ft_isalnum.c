@@ -29,15 +29,17 @@ int	ft_isalnum(int c)
 		return (0);
 }
 /*
-int main(void)
+#include <stdio.h>
+
+int	main(void)
 {
-    char c = 'A';
+	char	c;
 
-    if (ft_isalnum(c))
-        printf("'%c' is alphanumeric.\n", c);
-    else
-        printf("'%c' is not alphanumeric.\n", c);
-
-    return (0);
+	c = 'A';
+	if (ft_isalnum(c))
+		printf("'%c' is alphanumeric.\n", c);
+	else
+		printf("'%c' is not alphanumeric.\n", c);
+	return (0);
 }
 */
