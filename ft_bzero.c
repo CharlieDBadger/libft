@@ -32,14 +32,14 @@ void	ft_bzero(void *s, size_t len)
 	}
 }
 /*
-include <stdio.h>
+#include <stdio.h>
 
 int main(void)
 {
 	char buffer[10] = "TestData";
 	int i = 0;
 	printf("Before ft_bzero: %s\n", buffer);
-	ft_bzero(buffer, 5);
+	ft_bzero(buffer, 4);
 	printf("After ft_bzero: ");
 	while (i < 9)
 	{
