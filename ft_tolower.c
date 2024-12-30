@@ -37,10 +37,9 @@ char	*ft_tolower(char *str)
 
 int	main(void)
 {
-	char	str[];
+	char	str[] = "Hello, World!";;
 	int		i;
 
-	str[] = "Hello, World!";
 	i = 0;
 	while (str[i])
 	{

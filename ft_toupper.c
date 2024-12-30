@@ -36,10 +36,9 @@ char	*ft_toupper(char *str)
 
 int	main(void)
 {
-	char	str[];
+	char	str[] = "hello, world!";
 	int		i;
 
-	str[] = "hello, world!";
 	i = 0;
 	while (str[i])
 	{
