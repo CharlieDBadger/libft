@@ -11,6 +11,14 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+/*
+void	convert_to_upper(unsigned int index, char *c)
+{
+	if (*c >= 'a' && *c <= 'z')
+		*c -= 32;
+}
+*/
+
 /**
  * ft_striteri - Applies a function to each character of a string, 
  * passing its index and a pointer to the character as arguments.
@@ -33,15 +41,14 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-/*
-#include <stdio.h>
 
+#include <stdio.h>
+/*
 int	main(void)
 {
-	char	str[];
+	char	str[] = "hello world";;
 
-	str[] = "hello world";
-	ft_striteri(str, ft_toupper);
+	ft_striteri(str, convert_to_upper);
 	printf("Uppercase string: %s\n", str);
 	return (0);
 }
