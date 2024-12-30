@@ -44,10 +44,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 int	main(void)
 {
-	char	src[];
+	char	src[] = "Hello, World!";;
 	char	dest[20];
 
-	src[] = "Hello, World!";
 	ft_memcpy(dest, src, 13);
 	printf("Source: %s\n", src);
 	printf("Destination after ft_memcpy: %s\n", dest);
