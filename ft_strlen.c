@@ -33,10 +33,9 @@ int	ft_strlen(const char *str)
 
 int	main(void)
 {
-	char	str[];
+	char	str[] = "Hello, world!";;
 	size_t	len;
 
-	str[] = "Hello, world!";
 	len = ft_strlen(str);
 	printf("Length of the string: %zu\n", len);
 	return (0);
