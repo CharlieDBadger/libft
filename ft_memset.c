@@ -39,9 +39,8 @@ void	*ft_memset(void *ptr, int value, size_t num)
 
 int	main(void)
 {
-	char	str[];
+	char	str[] = "Hello, World!";
 
-	str[] = "Hello, World!";
 	printf("Before ft_memset: %s\n", str);
 	ft_memset(str, 'X', 5);
 	printf("After ft_memset: %s\n", str);
