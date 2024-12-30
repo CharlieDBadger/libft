@@ -55,12 +55,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 int	main(void)
 {
-	char			str[];
+	char			str[] = "Hello, world!";
 	unsigned int	start;
 	size_t			len;
 	char			*result;
 
-	str[] = "Hello, world!";
 	start = 7;
 	len = 5;
 	result = ft_substr(str, start, len);
