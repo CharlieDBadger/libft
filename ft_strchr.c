@@ -41,11 +41,10 @@ char	*ft_strchr(const char *str, int c)
 
 int	main(void)
 {
-	char	str[];
+	char	str[] = "Hello, world!";
 	char	c;
 	char	*result;
 
-	str[] = "Hello, world!";
 	c = 'o';
 	result = ft_strchr(str, c);
 	if (result)
