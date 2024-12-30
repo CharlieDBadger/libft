@@ -11,6 +11,26 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+/*
+int	ft_strlen(const char *str)
+{
+	int	count;
+
+	count = 0;
+	while (str[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
+}
+char ft_toup(unsigned int index, char c)
+{
+    if (c >= 'a' && c <= 'z')
+        return c - 32;
+    return c;
+}
+*/
+
 /**
  * ft_strmapi - Applies a function to each character of a string, 
  * passing its index and character as arguments.
@@ -47,14 +67,23 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 /*
 #include <stdio.h>
 
-int	main(void)
+int main(void)
 {
-	char	str[];
-	size_t	len;
+    char const *input;
+    char *result;
 
-	str[] = "Hello, world!";
-	len = ft_strlen(str);
-	printf("Length of the string: %zu\n", len);
-	return (0);
+	input = "hello world!";
+    printf("Original string: %s\n", input);
+    result = ft_strmapi(input, ft_toup);
+    if (result)
+    {
+        printf("Modified string: %s\n", result);
+        free(result);
+    }
+    else
+    {
+        printf("Memory allocation failed.\n");
+    }
+    return (0);
 }
 */
