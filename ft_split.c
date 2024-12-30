@@ -11,6 +11,45 @@
 /* ************************************************************************** */
 #include "libft.h"
 
+/*
+int	ft_strlen(const char *str)
+{
+	int	count;
+
+	count = 0;
+	while (str[count] != '\0')
+	{
+		count++;
+	}
+	return (count);
+}
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	size_t	i;
+	char	*subs;
+	char	*subsrtn;
+
+	if (!s)
+		return (NULL);
+	if (start >= ft_strlen(s))
+		return (NULL);
+	i = start;
+	subs = (char *)malloc((len + 1) * sizeof(char));
+	if (!subs)
+		return (NULL);
+	subsrtn = subs;
+	while (s[i] != '\0' && i < start + len)
+	{
+		*subs = s[i];
+		subs++;
+		i++;
+	}
+	*subs = '\0';
+	return (subsrtn);
+}
+*/
+
 /**
  * count_words - Counts the number of words in a string based on a delimiter.
  * @s: The input string to be analyzed.
@@ -125,13 +164,12 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	array = (char **)malloc(sizeof(char *) * (ft_wordcount(s, c) + 1));
+	array = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!array)
 		return (NULL);
 	array = extract_words(s, c, array);
 	return (array);
 }
-
 /*
 #include <stdio.h>
 #include <stdlib.h>
@@ -155,38 +193,5 @@ int	main(void)
 	}
 	free(result);
 	return 0;
-}
-*/
-
-/*
-char    **ft_split(char const *s, char c)
-{
-    int     i;
-    int     word_length;
-    char    **array;
-
-    if (!s)
-        return (NULL);
-    array = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
-    if (!array)
-        return (NULL);
-    i = 0;
-    while (*s)
-    {
-        while (*s == c)
-            s++;
-        if (*s != '\0')
-        {
-            word_length = 0;
-            while (s[word_length] && s[word_length] != c)
-                word_length++;
-            array[i] = ft_substr(s, 0, word_length);
-            if (!array[i++])
-                return (free_memory(array, i - 1));
-            s += word_length;
-        }
-    }
-    array[i] = NULL;
-    return (array);
 }
 */
