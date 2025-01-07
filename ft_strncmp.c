@@ -28,7 +28,7 @@
  *  - 0 if the first n characters of both strings are equal.
  *  - An integer greater than 0 if `s1` is lexicographically greater than `s2`.
  */
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
 {
 	unsigned int	i;
 

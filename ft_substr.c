@@ -28,25 +28,27 @@
  */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t	i;
 	char	*subs;
 	char	*subsrtn;
 
 	if (!s)
 		return (NULL);
 	if ((int)start >= ft_strlen(s))
-		return (NULL);
-	i = start;
+	{
+		subs = (char *)malloc(sizeof(char));
+		if (!subs)
+			return (NULL);
+		subs[0] = '\0';
+		return (subs);
+	}
+	if ((size_t)ft_strlen(s) - start < len)
+		len = (size_t)ft_strlen(s) - start;
 	subs = (char *)malloc((len + 1) * sizeof(char));
 	if (!subs)
 		return (NULL);
 	subsrtn = subs;
-	while (s[i] != '\0' && i < start + len)
-	{
-		*subs = s[i];
-		subs++;
-		i++;
-	}
+	while (s[start] && len--)
+		*subs++ = s[start++];
 	*subs = '\0';
 	return (subsrtn);
 }

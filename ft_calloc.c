@@ -29,22 +29,19 @@
 void	*ft_calloc(size_t num, size_t size)
 {
 	void	*ptr;
-	size_t	i;
 
-	if (num == 0 || size == 0)
+	if (num <= 0 || size <= 0)
 	{
 		num = 1;
 		size = 1;
 	}
-	ptr = malloc(num * size);
+	if (num != 0 && size > (num * size) / num)
+		return (NULL);
+	ptr = (unsigned char **)malloc(num * size);
 	if (ptr == NULL)
 		return (NULL);
-	i = 0;
-	while (i < num * size)
-	{
-		((unsigned char *)ptr)[i] = 0;
-		i++;
-	}
+	else
+		ft_memset(ptr, 0, num * size);
 	return (ptr);
 }
 /*

@@ -16,20 +16,11 @@
 * @str: The string to be converted.
 * return: A pointer to the converted string, or NULL if the input string is NULL.
 */
-char	*ft_toupper(char *str)
+int	ft_toupper(int c)
 {
-	int	i;
-
-	if (!str)
-		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			str[i] = str[i] - 32;
-		i++;
-	}
-	return (str);
+	if (c >= 'a' && c <= 'z')
+		c = c - 32;
+	return (c);
 }
 /*
 #include <stdio.h>

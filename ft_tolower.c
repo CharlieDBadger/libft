@@ -17,20 +17,11 @@
 * @str: The string whose length is to be calculated.
 * return: The length of the string.
 */
-char	*ft_tolower(char *str)
+int	ft_tolower(int c)
 {
-	int	i;
-
-	if (!str)
-		return (NULL);
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-			str[i] = str[i] + 32;
-		i++;
-	}
-	return (str);
+	if (c >= 'A' && c <= 'Z')
+		c = c + 32;
+	return (c);
 }
 /*
 #include <stdio.h>

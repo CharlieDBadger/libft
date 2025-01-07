@@ -22,7 +22,7 @@
  * Return: The integer representation of the string. If no valid conversion 
  *         is performed, returns 0.
  */
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	n;
@@ -53,10 +53,10 @@ int	main(void)
 {
 	printf("Input: \"42\" => Output: %d\n", ft_atoi("42"));
 	printf("Input: \"   -42\" => Output: %d\n", ft_atoi("   -42"));
-	printf("Input: \"+123\" => Output: %d\n", ft_atoi("+123"));
+	printf("Input: \"+++123\" => Output: %d\n", ft_atoi("+++123"));
 	printf("Input: \"  +0\" => Output: %d\n", ft_atoi("  +0"));
 	printf("Input: \"abc\" => Output: %d\n", ft_atoi("abc"));
-	printf("Input: \"123abc\" => Output: %d\n", ft_atoi("123abc"));
+	printf("Input: \"---123abc\" => Output: %d\n", ft_atoi("---123abc"));
 	return (0);
 }
 */
