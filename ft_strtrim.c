@@ -1,15 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/04 16:11:39 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/05 16:12:10 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/07 13:13:10 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/07 13:13:14 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
+/*
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+*/
 
 /**
  * ft_strtrim - Removes characters from the beginning and end of 's1' 
