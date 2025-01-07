@@ -12,6 +12,7 @@
 #include "libft.h"
 
 /*
+#include <stdio.h>
 int	ft_strlen(const char *str)
 {
 	int	count;
@@ -25,6 +26,7 @@ int	ft_strlen(const char *str)
 }
 char ft_toup(unsigned int index, char c)
 {
+    printf("El inndice del caracter es: %u\n", index);
     if (c >= 'a' && c <= 'z')
         return c - 32;
     return c;
@@ -65,8 +67,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (result);
 }
 /*
-#include <stdio.h>
-
 int main(void)
 {
     char const *input;
