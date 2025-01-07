@@ -36,6 +36,7 @@ void	ft_putstr_fd(char *s, int fd)
 }
 /*
 #include <fcntl.h>
+#include <unistd.h>
 
 int	main(void)
 {
