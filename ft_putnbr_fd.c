@@ -64,6 +64,7 @@ void	ft_putnbr_fd(int n, int fd)
 }
 /*
 #include <fcntl.h>
+#include <unistd.h>
 
 int	main(void)
 {
