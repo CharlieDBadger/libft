@@ -37,6 +37,7 @@ void	ft_putendl_fd(char *s, int fd)
 }
 /*
 #include <fcntl.h>
+#include <unistd.h>
 
 int	main(void)
 {
