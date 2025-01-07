@@ -27,6 +27,7 @@ void	ft_putchar_fd(char c, int fd)
 }
 /*
 #include <fcntl.h>
+#include <unistd.h>
 
 int	main(void)
 {
