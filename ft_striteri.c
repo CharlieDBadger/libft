@@ -14,8 +14,8 @@
 /*
 void	convert_to_upper(unsigned int index, char *c)
 {
-	if (*c >= 'a' && *c <= 'z')
-		*c -= 32;
+	if (c[i] >= 'a' && c[i] <= 'z')
+		c[i] -= 32;
 }
 */
 
@@ -37,7 +37,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	i = 0;
 	while (s[i])
 	{
-		f(i, s + i);
+		f(i, s);
 		i++;
 	}
 }
