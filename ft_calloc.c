@@ -36,7 +36,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		nmemb = 1;
 		size = 1;
 	}
-	if (nmemb != 0 && size > (nmemb * size) / nmemb)
+	if (size > (nmemb * size) / nmemb)
 		return (NULL);
 	ptr = (unsigned char **)malloc(nmemb * size);
 	if (ptr == NULL)
