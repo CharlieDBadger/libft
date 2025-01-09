@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:07:26 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:07:29 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:21:59 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:22:01 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**

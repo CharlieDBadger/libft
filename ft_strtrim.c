@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:13:10 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:13:14 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:24:30 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:24:33 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 /*
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);

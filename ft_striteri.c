@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:10:01 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:10:04 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:22:46 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:22:49 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /*
@@ -37,7 +38,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	i = 0;
 	while (s[i])
 	{
-		f(i, s);
+		f(i, &s[i]);
 		i++;
 	}
 }

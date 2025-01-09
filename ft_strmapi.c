@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:11:43 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:11:47 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:23:41 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:23:43 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /*

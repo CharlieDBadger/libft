@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:09:33 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:09:37 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:22:28 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:22:29 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /*
@@ -27,7 +28,7 @@ int	ft_strlen(const char *str)
 
 /**
  * ft_strdup - Duplicates a given string by allocating memory dynamically.
- * @str: The original string to duplicate.
+ * @s: The original string to duplicate.
  *
  * This function creates a new string by allocating memory dynamically,
  * copying the content of the given string (including the null terminator).
@@ -41,18 +42,18 @@ int	ft_strlen(const char *str)
  * Note: The while loop in this implementation ensures that each character,
  * including the null terminator, is copied to the new memory location.
  */
-char	*ft_strdup(const char *src)
+char	*ft_strdup(const char *s)
 {
 	int		i;
 	char	*strdup;
 
 	i = 0;
-	strdup = (char *)malloc((ft_strlen(src) + 1) * sizeof(char));
+	strdup = (char *)malloc((ft_strlen(s) + 1) * sizeof(char));
 	if (!strdup)
 		return (NULL);
-	while (src[i] != '\0')
+	while (s[i] != '\0')
 	{
-		strdup[i] = src[i];
+		strdup[i] = s[i];
 		i++;
 	}
 	strdup[i] = '\0';

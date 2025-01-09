@@ -3,18 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:10:54 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:10:59 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:23:17 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:23:18 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
  * ft_strlcpy - Copies a string from the source to the destination buffer
  *              while ensuring null-termination and preventing buffer overflow.
- * @dest: Pointer to the destination buffer where the string will be copied.
+ * @dst: Pointer to the destination buffer where the string will be copied.
  * @src: Pointer to the source string to be copied.
  * @size: The size of the destination buffer.
  *
@@ -27,7 +28,7 @@
  * whether the entire string was copied. This allows the caller to determine 
  * if truncation occurred by comparing the return value with the size parameter.
  */
-size_t	ft_strlcpy(char *dest, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	srclen;
@@ -38,10 +39,10 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		return (srclen);
 	while (src[i] != '\0' && i < size - 1)
 	{
-		dest[i] = src[i];
+		dst[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
+	dst[i] = '\0';
 	return (srclen);
 }
 /*

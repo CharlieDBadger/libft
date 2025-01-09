@@ -3,37 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:12:50 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:12:52 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:24:19 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:24:22 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
  * strrchr - Finds the last occurrence of a character in a string.
- * @str: The string to search in.
+ * @s: The string to search in.
  * @c: The character to search for (passed as an integer, 
  *     typically a `char` value).
  * 
  * return: A pointer to the last occurrence of character `c` in the 
- *         string `str`.
+ *         string `s`.
  *         If the character is not found, returns NULL.
  *         If `c` is the null character (`\0`), 
  *         returns a pointer to the end of the string.
  */
-char	*ft_strrchr(const char *str, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 		i++;
 	while (i >= 0)
 	{
-		if (str[i] == (char)c)
-			return ((char *)&str[i]);
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
 		i--;
 		if (i < 0)
 			break ;

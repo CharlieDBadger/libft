@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:06:37 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:06:41 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:20:35 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:20:37 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**

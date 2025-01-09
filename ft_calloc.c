@@ -3,45 +3,46 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:01:00 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:01:05 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:14:26 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:14:28 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
  * ft_calloc - Allocates memory for an array of elements and 
  * initializes it to zero.
- * @num: The number of elements to allocate.
+ * @nmemb: The number of elements to allocate.
  * @size: The size in bytes of each element.
  *
- * This function calculates the total memory required as `num * size`,
+ * This function calculates the total memory required as `nmemb * size`,
  * allocates it, and initializes all bytes to zero. The loop where 
- * `i < num * size` ensures that each byte in the allocated memory 
+ * `i < nmemb * size` ensures that each byte in the allocated memory 
  * is explicitly set to 0, fulfilling the requirement for zero initialization.
  * If the allocation fails, it returns NULL.
  *
  * Return: A pointer to the allocated and initialized memory, 
  * or NULL if the allocation fails.
  */
-void	*ft_calloc(size_t num, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 
-	if (num <= 0 || size <= 0)
+	if (nmemb <= 0 || size <= 0)
 	{
-		num = 1;
+		nmemb = 1;
 		size = 1;
 	}
-	if (num != 0 && size > (num * size) / num)
+	if (nmemb != 0 && size > (nmemb * size) / nmemb)
 		return (NULL);
-	ptr = (unsigned char **)malloc(num * size);
+	ptr = (unsigned char **)malloc(nmemb * size);
 	if (ptr == NULL)
 		return (NULL);
 	else
-		ft_memset(ptr, 0, num * size);
+		ft_memset(ptr, 0, nmemb * size);
 	return (ptr);
 }
 /*

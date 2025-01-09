@@ -3,29 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 12:59:39 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 12:59:44 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:14:02 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:14:04 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
-* ft_bzero - Sets the first 'len' bytes of the memory area 
+* ft_bzero - Sets the first 'n' bytes of the memory area 
 * pointed to by 's' to zero.
 * @s: A pointer to the memory area to be filled.
 *    's' refers to the memory location 
 *     where the bytes will be set to zero.
-* @len: The number of bytes to set to zero.
+* @n: The number of bytes to set to zero.
 * return: None.
 */
-void	ft_bzero(void *s, size_t len)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
 
 	ptr = s;
-	while (len-- > 0)
+	while (n-- > 0)
 	{
 		*ptr = 0;
 		ptr++;

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:13:53 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:13:55 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:24:42 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:24:44 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
@@ -33,7 +34,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	if ((int)start >= ft_strlen(s))
+	if (start >= ft_strlen(s))
 	{
 		subs = (char *)malloc(sizeof(char));
 		if (!subs)
@@ -41,8 +42,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		subs[0] = '\0';
 		return (subs);
 	}
-	if ((size_t)ft_strlen(s) - start < len)
-		len = (size_t)ft_strlen(s) - start;
+	if (ft_strlen(s) - start < len)
+		len = ft_strlen(s) - start;
 	subs = (char *)malloc((len + 1) * sizeof(char));
 	if (!subs)
 		return (NULL);

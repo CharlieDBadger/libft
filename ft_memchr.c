@@ -3,35 +3,36 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:04:04 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:04:07 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:19:08 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:19:10 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
- * memchr - Scans the first n bytes of the memory area pointed to by ptr
+ * memchr - Scans the first n bytes of the memory area pointed to by s
  *          for the first occurrence of the character value.
- * @ptr: Pointer to the memory block to be searched.
- * @value: The byte value to search for.
- * @num: The number of bytes to search in the memory block.
+ * @s: Pointer to the memory block to be searched.
+ * @c: The byte value to search for.
+ * @n: The number of bytes to search in the memory block.
  * 
  * Return: Returns a pointer to the first occurrence of value in the memory
  *         block, or NULL if the value is not found within the first n bytes.
  */
-void	*ft_memchr(const void *ptr, int value, size_t num)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;
-	unsigned char	*s;
+	unsigned char	*src;
 
-	s = (unsigned char *)ptr;
+	src = (unsigned char *)s;
 	i = 0;
-	while (i < num)
+	while (i < n)
 	{
-		if (s[i] == (unsigned char)value)
-			return (&s[i]);
+		if (src[i] == (unsigned char)c)
+			return (&src[i]);
 		i++;
 	}
 	return (NULL);

@@ -3,19 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:04:45 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:04:48 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:19:19 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:19:26 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
  * ft_memcmp - Compares two blocks of memory byte by byte.
- * @ptr1: Pointer to the first block of memory.
- * @ptr2: Pointer to the second block of memory.
- * @num: Number of bytes to compare.
+ * @s1: Pointer to the first block of memory.
+ * @s2: Pointer to the second block of memory.
+ * @n: Number of bytes to compare.
  * 
  * Return: 
  *   - 0 if the memory blocks are equal up to the given number of bytes.
@@ -24,19 +25,19 @@
  *   - A negative value if the first differing byte in ptr1 is less 
  *     than the corresponding byte in ptr2.
  */
-int	ft_memcmp(const void *ptr1, const void *ptr2, size_t num)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	*s1;
-	unsigned char	*s2;
+	unsigned char	*src1;
+	unsigned char	*src2;
 	size_t			i;
 
-	s1 = (unsigned char *)ptr1;
-	s2 = (unsigned char *)ptr2;
+	src1 = (unsigned char *)s1;
+	src2 = (unsigned char *)s2;
 	i = 0;
-	while (i < num)
+	while (i < n)
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+		if (src1[i] != src2[i])
+			return (src1[i] - src2[i]);
 		i++;
 	}
 	return (0);

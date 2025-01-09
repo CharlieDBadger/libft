@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:14:12 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:14:15 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:25:21 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:25:23 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**

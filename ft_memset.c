@@ -3,36 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:05:50 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:05:55 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:20:15 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:20:17 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
 * ft_memset - Fills the first 'num' bytes of the memory area pointed to 
-*            by 'ptr' with the constant byte 'value'.
-* @ptr: A pointer to the memory area to be filled.
-* @value: The value to set. It is passed as an int, but it's cast to
+*            by 's' with the constant byte 'c'.
+* @s: A pointer to the memory area to be filled.
+* @c: The value to set. It is passed as an int, but it's cast to
 *         unsigned char to be stored byte by byte.
-* @num: The number of bytes to be set to the value.
-* return: A pointer to the memory area 'ptr'.
+* @n: The number of bytes to be set to the value.
+* return: A pointer to the memory area 's'.
 */
-void	*ft_memset(void *ptr, int value, size_t num)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	size_t			i;
-	unsigned char	*p;
+	unsigned char	*src;
 
 	i = 0;
-	p = (unsigned char *)ptr;
-	while (i < num)
+	src = (unsigned char *)s;
+	while (i < n)
 	{
-		p[i] = (unsigned char)value;
+		src[i] = (unsigned char)c;
 		i++;
 	}
-	return (ptr);
+	return (s);
 }
 /*
 #include <stdio.h>

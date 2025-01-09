@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:10:32 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:10:36 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:22:58 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:23:00 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /*

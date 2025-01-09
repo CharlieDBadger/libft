@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:01:28 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:01:33 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:15:16 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:15:22 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**

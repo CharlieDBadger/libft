@@ -3,37 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:09:12 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:09:16 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:22:18 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:22:20 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
  * strchr - Locates the first occurrence of a character in a string.
- * @str: The string to search in.
+ * @s: The string to search in.
  * @c: The character to search for.
  * 
  * Return: 
- * - A pointer to the first occurrence of @c in @str, 
+ * - A pointer to the first occurrence of @c in @s, 
  *   or NULL if the character is not found.
  * - If @c is '\0', returns a pointer to the null terminator of the string.
  */
-char	*ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (str[i] == (char)c)
-			return ((char *)&str[i]);
+		if (s[i] == (char)c)
+			return ((char *)&s[i]);
 		i++;
 	}
 	if (c == '\0')
-		return ((char *)&str[i]);
+		return ((char *)&s[i]);
 	return (NULL);
 }
 /*

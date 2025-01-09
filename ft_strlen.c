@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:11:17 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:11:20 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:23:31 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:23:33 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
@@ -17,9 +18,9 @@
 * @str: The string whose length is to be calculated.
 * return: The length of the string.
 */
-int	ft_strlen(const char *str)
+size_t	ft_strlen(const char *str)
 {
-	int	count;
+	size_t	count;
 
 	count = 0;
 	while (str[count] != '\0')

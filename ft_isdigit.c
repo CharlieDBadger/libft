@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cbolanos <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: cbolanos <cbolanos@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/07 13:02:53 by cbolanos          #+#    #+#             */
-/*   Updated: 2025/01/07 13:02:56 by cbolanos         ###   ########.fr       */
+/*   Created: 2025/01/08 13:17:14 by cbolanos          #+#    #+#             */
+/*   Updated: 2025/01/08 13:17:16 by cbolanos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 /**
