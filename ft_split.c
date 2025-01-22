@@ -12,45 +12,6 @@
 
 #include "libft.h"
 
-/*
-int	ft_strlen(const char *str)
-{
-	int	count;
-
-	count = 0;
-	while (str[count] != '\0')
-	{
-		count++;
-	}
-	return (count);
-}
-
-char	*ft_substr(char const *s, unsigned int start, size_t len)
-{
-	size_t	i;
-	char	*subs;
-	char	*subsrtn;
-
-	if (!s)
-		return (NULL);
-	if ((int)start >= ft_strlen(s))
-		return (NULL);
-	i = start;
-	subs = (char *)malloc((len + 1) * sizeof(char));
-	if (!subs)
-		return (NULL);
-	subsrtn = subs;
-	while (s[i] != '\0' && i < start + len)
-	{
-		*subs = s[i];
-		subs++;
-		i++;
-	}
-	*subs = '\0';
-	return (subsrtn);
-}
-*/
-
 /**
  * count_words - Counts the number of words in a string based on a delimiter.
  * @s: The input string to be analyzed.
