@@ -12,20 +12,6 @@
 
 #include "libft.h"
 
-/*
-int	ft_strlen(const char *str)
-{
-	int	count;
-
-	count = 0;
-	while (str[count] != '\0')
-	{
-		count++;
-	}
-	return (count);
-}
-*/
-
 /**
  * ft_strjoin - Concatenates two strings into a newly allocated string.
  * 
