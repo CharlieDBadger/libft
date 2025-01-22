@@ -62,8 +62,8 @@
 ## Usage
 Include the library files in your project and compile them with your code. Use the functions from this library to simplify common C tasks.
 
-
-
+<br>
+<br>
 <p align="center">
    Charlie Dev Badger
    <br>
@@ -74,7 +74,6 @@ Include the library files in your project and compile them with your code. Use t
    <a target="_blank" href="https://twitter.com/CharlieDBadger_"><img src="https://img.shields.io/badge/-Twitter-000000?style=for-the-badge&logo=X&logoColor=white"></img></a>
    <a target="_blank" href="https://www.credly.com/users/carlos-alberto-bolanos-rojas/edit#badge-portfolio"><img src="https://img.shields.io/badge/-Credly-FF6B00?style=for-the-badge&logo=credly&logoColor=white"></img></a>
 </p>
-
 <p align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 </p>
