@@ -63,5 +63,16 @@
 Include the library files in your project and compile them with your code. Use the functions from this library to simplify common C tasks.
 
 <p align="center">
+   "The flame burns even if the rain falls." - Shigekuni Yamamoto-Genryūsai 🐦‍🔥
+   <br>
+   <br>
+   <a target="_blank" href="https://www.linkedin.com/in/charliedbadger/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white"></img></a>
+   <a target="_blank" href="mailto:charliedevbadger@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white"></img></a>
+   <a target="_blank" href="https://holy-waitress-abf.notion.site/La-Fortaleza-del-Tej-n-TechBlog-14b9a466f0dd80aba93ad7f2c0712a7d"><img src="https://img.shields.io/badge/-Notion-000000?style=for-the-badge&logo=Notion&logoColor=white"></img></a>
+   <a target="_blank" href="https://twitter.com/CharlieDBadger_"><img src="https://img.shields.io/badge/-Twitter-000000?style=for-the-badge&logo=X&logoColor=white"></img></a>
+   <a target="_blank" href="https://www.credly.com/users/carlos-alberto-bolanos-rojas/edit#badge-portfolio"><img src="https://img.shields.io/badge/-Credly-FF6B00?style=for-the-badge&logo=credly&logoColor=white"></img></a>
+</p>
+
+<p align="center">
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 </p>
