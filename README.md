@@ -1,3 +1,6 @@
+![Range_ Why Generalists Triumph in a Specialized World](https://github.com/user-attachments/assets/f09689c7-6cde-4df0-8c29-8b6058b281c4)
+
+
 # Libft
 
 **Libft** es una librería personalizada de funciones en C que implementa herramientas útiles para manejar cadenas, memoria, listas enlazadas, y otras utilidades básicas. Esta librería está diseñada para proporcionar una base sólida al trabajar en proyectos más grandes.
