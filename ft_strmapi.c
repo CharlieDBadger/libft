@@ -13,18 +13,6 @@
 #include "libft.h"
 
 /*
-#include <stdio.h>
-int	ft_strlen(const char *str)
-{
-	int	count;
-
-	count = 0;
-	while (str[count] != '\0')
-	{
-		count++;
-	}
-	return (count);
-}
 char ft_toup(unsigned int index, char c)
 {
     printf("El inndice del caracter es: %u\n", index);
