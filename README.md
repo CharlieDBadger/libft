@@ -1,5 +1,6 @@
-![Range_ Why Generalists Triumph in a Specialized World](https://github.com/user-attachments/assets/f09689c7-6cde-4df0-8c29-8b6058b281c4)
-
+<p align="center">
+   <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=250&color=gradient&text=CharlieDevBadger&desc=Cybersecurity%20and%20Developement&descSize=13&descAlign=59&descAlignY=53&textBg=false&fontAlign=50&fontAlignY=41&reversal=false" alt="CharlieDevBadger Banner"/>
+</p>
 
 # Libft
 
