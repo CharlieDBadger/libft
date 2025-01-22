@@ -13,10 +13,12 @@
 #include "libft.h"
 
 /**
-* ft_strlen - Calculates the length of the string pointed to by 'str',
-*             excluding the null terminator.
-* @str: The string whose length is to be calculated.
-* return: The length of the string.
+* ft_tolower - Converts an uppercase letter to its lowercase equivalent.
+*              If the input character is not an uppercase letter,
+*              it is returned unchanged.
+* @c: The character to be converted.
+* return: The lowercase equivalent of the character if it's uppercase,
+*         or the character itself if no conversion is necessary.
 */
 int	ft_tolower(int c)
 {
