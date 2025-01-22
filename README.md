@@ -1,67 +1,67 @@
 <p align="center">
-   <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=250&color=gradient&text=LIBFT&desc=Cybersecurity%20and%20Developement&descSize=13&descAlign=59&descAlignY=53&textBg=false&fontAlign=50&fontAlignY=41&reversal=false" alt="CharlieDevBadger Banner"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
 </p>
 
 # Libft
 
-**Libft** es una librería personalizada de funciones en C que implementa herramientas útiles para manejar cadenas, memoria, listas enlazadas, y otras utilidades básicas. Esta librería está diseñada para proporcionar una base sólida al trabajar en proyectos más grandes.
+**Libft** is a custom C library that provides essential functions for handling strings, memory, linked lists, and other basic utilities. This library is designed to serve as a solid foundation for larger projects.
 
-## Descripción de funciones
+## Function Descriptions
 
-### Manipulación de cadenas
-- **ft_atoi**: Convierte una cadena en un número entero.
-- **ft_isalnum**: Verifica si un carácter es alfanumérico.
-- **ft_isalpha**: Verifica si un carácter es una letra.
-- **ft_isascii**: Comprueba si un carácter pertenece a la tabla ASCII.
-- **ft_isdigit**: Verifica si un carácter es un dígito.
-- **ft_isprint**: Verifica si un carácter es imprimible.
-- **ft_itoa**: Convierte un número entero en una cadena.
-- **ft_split**: Divide una cadena en un array de cadenas según un delimitador.
-- **ft_strchr**: Busca la primera aparición de un carácter en una cadena.
-- **ft_strdup**: Duplica una cadena.
-- **ft_striteri**: Aplica una función a cada carácter de una cadena con su índice.
-- **ft_strjoin**: Une dos cadenas en una nueva.
-- **ft_strlcat**: Concatena cadenas con un tamaño limitado.
-- **ft_strlcpy**: Copia una cadena con un tamaño limitado.
-- **ft_strlen**: Calcula la longitud de una cadena.
-- **ft_strmapi**: Crea una nueva cadena aplicando una función a cada carácter.
-- **ft_strncmp**: Compara dos cadenas hasta un número específico de caracteres.
-- **ft_strnstr**: Localiza una subcadena dentro de otra, hasta un límite dado.
-- **ft_strrchr**: Busca la última aparición de un carácter en una cadena.
-- **ft_strtrim**: Elimina caracteres específicos del inicio y fin de una cadena.
-- **ft_substr**: Extrae una subcadena de una cadena.
-- **ft_tolower**: Convierte un carácter en minúscula.
-- **ft_toupper**: Convierte un carácter en mayúscula.
+### String Manipulation
+- **ft_atoi**: Converts a string to an integer.
+- **ft_isalnum**: Checks if a character is alphanumeric.
+- **ft_isalpha**: Checks if a character is a letter.
+- **ft_isascii**: Verifies if a character belongs to the ASCII table.
+- **ft_isdigit**: Checks if a character is a digit.
+- **ft_isprint**: Checks if a character is printable.
+- **ft_itoa**: Converts an integer to a string.
+- **ft_split**: Splits a string into an array of strings using a delimiter.
+- **ft_strchr**: Finds the first occurrence of a character in a string.
+- **ft_strdup**: Duplicates a string.
+- **ft_striteri**: Applies a function to each character of a string with its index.
+- **ft_strjoin**: Joins two strings into a new one.
+- **ft_strlcat**: Concatenates strings with a size limit.
+- **ft_strlcpy**: Copies a string with a size limit.
+- **ft_strlen**: Calculates the length of a string.
+- **ft_strmapi**: Creates a new string by applying a function to each character.
+- **ft_strncmp**: Compares two strings up to a specified number of characters.
+- **ft_strnstr**: Locates a substring within another string, up to a given limit.
+- **ft_strrchr**: Finds the last occurrence of a character in a string.
+- **ft_strtrim**: Trims specific characters from the start and end of a string.
+- **ft_substr**: Extracts a substring from a string.
+- **ft_tolower**: Converts a character to lowercase.
+- **ft_toupper**: Converts a character to uppercase.
 
-### Gestión de memoria
-- **ft_bzero**: Llena un bloque de memoria con ceros.
-- **ft_calloc**: Reserva memoria inicializada a cero.
-- **ft_memchr**: Busca un carácter en un bloque de memoria.
-- **ft_memcmp**: Compara dos bloques de memoria.
-- **ft_memcpy**: Copia un bloque de memoria a otro.
-- **ft_memmove**: Copia un bloque de memoria a otro, gestionando solapamientos.
-- **ft_memset**: Llena un bloque de memoria con un valor específico.
+### Memory Management
+- **ft_bzero**: Fills a memory block with zeros.
+- **ft_calloc**: Allocates memory initialized to zero.
+- **ft_memchr**: Searches for a character in a memory block.
+- **ft_memcmp**: Compares two memory blocks.
+- **ft_memcpy**: Copies a memory block to another.
+- **ft_memmove**: Copies a memory block to another, handling overlaps.
+- **ft_memset**: Fills a memory block with a specific value.
 
-### Salida
-- **ft_putchar_fd**: Escribe un carácter en un archivo.
-- **ft_putendl_fd**: Escribe una cadena seguida de un salto de línea en un archivo.
-- **ft_putnbr_fd**: Escribe un número entero en un archivo.
-- **ft_putstr_fd**: Escribe una cadena en un archivo.
+### Output
+- **ft_putchar_fd**: Writes a character to a file descriptor.
+- **ft_putendl_fd**: Writes a string followed by a newline to a file descriptor.
+- **ft_putnbr_fd**: Writes an integer to a file descriptor.
+- **ft_putstr_fd**: Writes a string to a file descriptor.
 
-### Listas enlazadas
-- **ft_lstnew**: Crea un nuevo nodo de lista enlazada.
-- **ft_lstadd_front**: Añade un nodo al inicio de una lista enlazada.
-- **ft_lstsize**: Cuenta el número de nodos en una lista enlazada.
-- **ft_lstlast**: Obtiene el último nodo de una lista enlazada.
-- **ft_lstadd_back**: Añade un nodo al final de una lista enlazada.
-- **ft_lstdelone**: Elimina un nodo de la lista.
-- **ft_lstclear**: Elimina todos los nodos de una lista enlazada.
-- **ft_lstiter**: Itera sobre los nodos de una lista, aplicando una función.
-- **ft_lstmap**: Crea una nueva lista aplicando una función a cada nodo.
+### Linked Lists
+- **ft_lstnew**: Creates a new linked list node.
+- **ft_lstadd_front**: Adds a node to the beginning of a linked list.
+- **ft_lstsize**: Counts the number of nodes in a linked list.
+- **ft_lstlast**: Retrieves the last node of a linked list.
+- **ft_lstadd_back**: Adds a node to the end of a linked list.
+- **ft_lstdelone**: Deletes a node from the linked list.
+- **ft_lstclear**: Deletes all nodes in a linked list.
+- **ft_lstiter**: Iterates over the nodes of a list, applying a function.
+- **ft_lstmap**: Creates a new list by applying a function to each node.
 
-## Uso
-Incluye los archivos de la librería en tu proyecto y compílalos junto a tu código. Usa las funciones de esta librería para simplificar tareas comunes en C.
+## Usage
+Include the library files in your project and compile them with your code. Use the functions from this library to simplify common C tasks.
 
-```bash
-gcc -Wall -Wextra -Werror -c *.c
-ar rcs libft.a *.o
+<p align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
+</p>
