@@ -62,8 +62,10 @@
 ## Usage
 Include the library files in your project and compile them with your code. Use the functions from this library to simplify common C tasks.
 
+
+
 <p align="center">
-   "The flame burns even if the rain falls." - Shigekuni Yamamoto-Genryūsai 🐦‍🔥
+   Charlie Dev Badger
    <br>
    <br>
    <a target="_blank" href="https://www.linkedin.com/in/charliedbadger/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white"></img></a>
