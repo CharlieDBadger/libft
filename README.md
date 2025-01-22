@@ -1,5 +1,5 @@
 <p align="center">
-   <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=250&color=gradient&text=CharlieDevBadger&desc=Cybersecurity%20and%20Developement&descSize=13&descAlign=59&descAlignY=53&textBg=false&fontAlign=50&fontAlignY=41&reversal=false" alt="CharlieDevBadger Banner"/>
+   <img width="100%" src="https://capsule-render.vercel.app/api?type=venom&height=250&color=gradient&text=LIBFT&desc=Cybersecurity%20and%20Developement&descSize=13&descAlign=59&descAlignY=53&textBg=false&fontAlign=50&fontAlignY=41&reversal=false" alt="CharlieDevBadger Banner"/>
 </p>
 
 # Libft
