@@ -83,13 +83,6 @@ Utilities for creating, modifying, and iterating over linked lists.
 
 ---
 
-| **Column A** | **Column B** | **Column C** |
-|--------------|--------------|--------------|
-| A1           | B1           | ![Range_ Why Generalists Triumph in a Specialized World](https://github.com/user-attachments/assets/716cbec5-32d5-42e9-9d93-7b3454dc1f4e)|
-| A2           | B2           | C2           |
-| A3           | B3           | C3           |
-
-
 ## Usage
 Include the library files in your project and compile them with your code. Use the functions from this library to simplify common C tasks.
 
